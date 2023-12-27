@@ -4,11 +4,6 @@ from collections import deque
 with open("day17/input.txt", mode="r") as input_stream:
     heat_map = input_stream.read().splitlines()
 
-grid = {}
-for i, l in enumerate(heat_map):
-    for j, c in enumerate(l.strip("\n")):
-        grid[(j, i)] = int(c)
-
 
 rows, cols = len(heat_map), len(heat_map[0])
 
